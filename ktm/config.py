@@ -2,11 +2,11 @@
 import pynput
 
 class Constant:
-    mouse_init_move_distance=32
-    mouse_init_wheel_distance=2
+    mouse_init_move_distance=64
+    mouse_init_wheel_distance=4
 
 class Shortcut:
-    leader                 =pynput.keyboard.Key.alt
+    leader                 =pynput.keyboard.Key.alt_l
     mouse_move_up          ='k'
     mouse_move_down        ='j'
     mouse_move_left        ='h'

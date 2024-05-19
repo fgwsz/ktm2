@@ -40,7 +40,9 @@ def on_press(key):
     if not is_normal_key(key):
         if key==config.Shortcut.leader:
             g_leader_is_press=True
-    elif not g_app_is_pause and key.char in callback_table:
+    elif not g_app_is_pause \
+        and g_leader_is_press \
+        and key.char in callback_table:
         callback_table[key.char]()
     elif key.char==config.Shortcut.app_pause:
         g_app_is_pause=True
