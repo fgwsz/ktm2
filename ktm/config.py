@@ -1,6 +1,10 @@
 # -*- coding: utf-8 -*-
 import pynput
 
+class Constant:
+    mouse_init_move_distance=32
+    mouse_init_wheel_distance=2
+
 class Shortcut:
     leader                 =pynput.keyboard.Key.alt
     mouse_move_up          ='k'
@@ -13,8 +17,11 @@ class Shortcut:
     mouse_left_up          ='u'
     mouse_right_click      ='x'
     mouse_right_down       ='i'
-    mouse_right_up         ='U'
+    mouse_right_up         ='y'
     mouse_wheel_down       ='n'
     mouse_wheel_up         ='b'
-    mouse_dpixel_double    ='2'
-    mouse_dpixel_halve     ='/'
+    mouse_distance_double  ='2'
+    mouse_distance_halve   ='-'
+    app_pause              ='p'
+    app_restart            ='r'
+    app_close              ='c'

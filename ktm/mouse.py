@@ -1,19 +1,8 @@
 # -*- coding: utf-8 -*-
 import pynput
+from . import config
 
 class Mouse:
-    current_dpixel_=32
-
-    @staticmethod
-    def current_position():
-        mouse=pynput.mouse.Controller()
-        x,y=mouse.position
-        return x,y
-
-    @staticmethod
-    def current_dpixel():
-        return Mouse.current_dpixel_
-
     @staticmethod
     def left_click():
         mouse=pynput.mouse.Controller()
@@ -54,37 +43,44 @@ class Mouse:
         mouse=pynput.mouse.Controller()
         mouse.move(dx,dy)
 
+    move_distance_=config.Constant.mouse_init_move_distance
+    wheel_distance_=config.Constant.mouse_init_wheel_distance
+
     @staticmethod
     def move_up():
-        Mouse._move(0,-Mouse.current_dpixel_)
+        Mouse._move(0,-Mouse.move_distance_)
 
     @staticmethod
     def move_down():
-        Mouse._move(0,Mouse.current_dpixel_)
+        Mouse._move(0,Mouse.move_distance_)
 
     @staticmethod
     def move_left():
-        Mouse._move(-Mouse.current_dpixel_,0)
+        Mouse._move(-Mouse.move_distance_,0)
 
     @staticmethod
     def move_right():
-        Mouse._move(Mouse.current_dpixel_,0)
+        Mouse._move(Mouse.move_distance_,0)
 
     @staticmethod
-    def dpixel_double():
-        Mouse.current_dpixel_=Mouse.current_dpixel_*2
+    def distance_double():
+        Mouse.move_distance_=Mouse.move_distance_*2
+        Mouse.wheel_distance_=Mouse.wheel_distance_*2
 
     @staticmethod
-    def dpixel_halve():
-        if Mouse.current_dpixel_>1:
-            Mouse.current_dpixel_=int(Mouse.current_dpixel_/2)
+    def distance_halve():
+        if Mouse.move_distance_>1:
+            Mouse.move_distance_=int(Mouse.move_distance_/2)
+
+        if Mouse.wheel_distance_>1:
+            Mouse.wheel_distance_=int(Mouse.wheel_distance_/2)
 
     @staticmethod
     def wheel_up():
         mouse=pynput.mouse.Controller()
-        mouse.scroll(0,Mouse.current_dpixel_)
+        mouse.scroll(0,Mouse.wheel_distance_)
 
     @staticmethod
     def wheel_down():
         mouse=pynput.mouse.Controller()
-        mouse.scroll(0,-Mouse.current_dpixel_)
+        mouse.scroll(0,-Mouse.wheel_distance_)
