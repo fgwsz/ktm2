@@ -1,27 +1,25 @@
 # -*- coding: utf-8 -*-
-import pynput
-
 class Constant:
-    mouse_init_move_distance=64
-    mouse_init_wheel_distance=4
+    mouse_init_move_distance =0#int >0
+    mouse_init_wheel_distance=0#int >0
 
 class Shortcut:
-    leader                 =pynput.keyboard.Key.alt_l
-    mouse_move_up          ='k'
-    mouse_move_down        ='j'
-    mouse_move_left        ='h'
-    mouse_move_right       ='l'
-    mouse_left_click       ='o'
-    mouse_left_double_click='8'
-    mouse_left_down        ='g'
-    mouse_left_up          ='u'
-    mouse_right_click      ='x'
-    mouse_right_down       ='i'
-    mouse_right_up         ='y'
-    mouse_wheel_down       ='n'
-    mouse_wheel_up         ='b'
-    mouse_distance_double  ='2'
-    mouse_distance_halve   ='-'
-    app_pause              ='p'
-    app_restart            ='r'
-    app_close              ='c'
+    leader                 =''#pynput.keyboard.Key
+    mouse_move_up          =''#pynput.keyboard.Key.char
+    mouse_move_down        =''#pynput.keyboard.Key.char
+    mouse_move_left        =''#pynput.keyboard.Key.char
+    mouse_move_right       =''#pynput.keyboard.Key.char
+    mouse_left_click       =''#pynput.keyboard.Key.char
+    mouse_left_double_click=''#pynput.keyboard.Key.char
+    mouse_left_down        =''#pynput.keyboard.Key.char
+    mouse_left_up          =''#pynput.keyboard.Key.char
+    mouse_right_click      =''#pynput.keyboard.Key.char
+    mouse_right_down       =''#pynput.keyboard.Key.char
+    mouse_right_up         =''#pynput.keyboard.Key.char
+    mouse_wheel_down       =''#pynput.keyboard.Key.char
+    mouse_wheel_up         =''#pynput.keyboard.Key.char
+    mouse_distance_double  =''#pynput.keyboard.Key.char
+    mouse_distance_halve   =''#pynput.keyboard.Key.char
+    app_pause              =''#pynput.keyboard.Key.char
+    app_restart            =''#pynput.keyboard.Key.char
+    app_close              =''#pynput.keyboard.Key.char

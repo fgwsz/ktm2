@@ -3,6 +3,14 @@ import pynput
 from . import config
 
 class Mouse:
+    move_distance_=0
+    wheel_distance_=0
+
+    @staticmethod
+    def init():
+        Mouse.move_distance_=config.Constant.mouse_init_move_distance
+        Mouse.wheel_distance_=config.Constant.mouse_init_wheel_distance
+
     @staticmethod
     def left_click():
         mouse=pynput.mouse.Controller()
@@ -42,9 +50,6 @@ class Mouse:
     def _move(dx,dy):
         mouse=pynput.mouse.Controller()
         mouse.move(dx,dy)
-
-    move_distance_=config.Constant.mouse_init_move_distance
-    wheel_distance_=config.Constant.mouse_init_wheel_distance
 
     @staticmethod
     def move_up():
