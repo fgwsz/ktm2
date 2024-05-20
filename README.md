@@ -69,4 +69,4 @@ others in
 ```
 > Tips:  
 > Don't set duplicate shortcut keys.  
-> Don't set the shortcut key to empty`('')`.  
+> Don't set the shortcut key to empty`("")`.  
