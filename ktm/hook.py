@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-from . import config
-from . import mouse
+from ktm import config
+from ktm import mouse
 
 g_callback_table={}
 g_leader_is_press=False

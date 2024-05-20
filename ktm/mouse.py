@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import pynput
-from . import config
+from ktm import config
 
 class Mouse:
     move_distance_=0

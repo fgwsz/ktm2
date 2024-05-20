@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import json
 import pynput
-from . import config
+from ktm import config
 
 g_special_key_string_to_pynput_key={
     'alt':pynput.keyboard.Key.alt,
