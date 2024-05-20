@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from ktm.execute import execute
+from ktm.ktm import execute
 
-if __name__=="__main__":
+if __name__=='__main__':
     execute()

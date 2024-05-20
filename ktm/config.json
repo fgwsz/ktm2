@@ -19,5 +19,5 @@
     "mouse_distance_halve"     :"-",
     "app_pause"                :"!",
     "app_restart"              :"@",
-    "app_close"                :"`"
+    "app_close"                :"^"
 }
