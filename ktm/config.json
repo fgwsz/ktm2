@@ -17,7 +17,7 @@
     "mouse_wheel_up"           :"b",
     "mouse_distance_double"    :"2",
     "mouse_distance_halve"     :"-",
-    "app_pause"                :"p",
-    "app_restart"              :"r",
-    "app_close"                :"c"
+    "app_pause"                :"!",
+    "app_restart"              :"@",
+    "app_close"                :"`"
 }
