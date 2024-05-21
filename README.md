@@ -1,8 +1,8 @@
 # KTM2 ( Windows | Linux )
 `KTM2(Keyboard To Mouse)`'s purpose is to replace mouse operation with keyboard operation on Windows/Linux operating systems.
 ## Execute
-Linux:Execute`ktm2/ktm.sh`  
 Windows:Execute`ktm2/ktm.ps1`  
+Linux:Execute`ktm2/ktm.sh`  
 ## Configure
 Edit `ktm2/ktm/config.json`
 ```json
@@ -27,7 +27,7 @@ Edit `ktm2/ktm/config.json`
     "mouse_distance_halve"     :"-",
     "app_pause"                :"!",
     "app_restart"              :"@",
-    "app_close"                :"`"
+    "app_close"                :"^"
 }
 ```
 ## Help
@@ -63,4 +63,4 @@ others in
 ```
 > Tips:  
 > Don't set duplicate shortcut keys.  
-> Don't set the shortcut key to empty`("")`.  
+> Don't set the shortcut key to `""`(empty string).  
