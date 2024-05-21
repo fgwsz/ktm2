@@ -1,3 +1,4 @@
+#!/bin/bash
 git add ./ktm/*.py
 git add ./ktm/*.json
 git add ./git_push.sh
