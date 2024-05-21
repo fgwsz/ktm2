@@ -4,4 +4,8 @@ cd $KTM_MODULE_DIR
 if ! pip show pynput &> /dev/null; then
     pip install pynput
 fi
-python -m ktm
+if ! type python &> /dev/null; then
+    python3 -m ktm
+else
+    python -m ktm
+fi
