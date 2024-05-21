@@ -1,14 +1,8 @@
 # KTM2 ( Windows | Linux )
 `KTM2(Keyboard To Mouse)`'s purpose is to replace mouse operation with keyboard operation on Windows/Linux operating systems.
-## Install
-```shell
-pip3 install pynput
-```
 ## Execute
-```shell
-cd ktm2
-python3 -m ktm
-```
+Linux:Execute`ktm2/ktm.sh`  
+Windows:Execute`ktm2/ktm.ps1`  
 ## Configure
 Edit `ktm2/ktm/config.json`
 ```json
