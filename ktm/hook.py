@@ -34,9 +34,6 @@ def is_normal_key(key):
         ret=False
     return ret
 
-def is_shortcut_of_leader(key):
-    return key==config.Shortcut.leader
-
 def on_press(key):
     global g_leader_is_press
     global g_app_is_pause
