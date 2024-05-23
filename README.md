@@ -1,5 +1,5 @@
 # KTM2 ( Windows | Linux( [√]X11 [×]Wayland ) )
-`KTM2(Keyboard To Mouse)`'s purpose is to replace mouse operation with keyboard operation on Windows/Linux operating systems.
+`KTM2(Keyboard To Mouse)`'s purpose is to replace mouse operation with keyboard operation on Windows/Linux(X11) operating systems.
 ## Install
 Windows:Execute`ktm2/install.ps1`  
 Linux(X11):Execute`ktm2/install.sh`  
@@ -10,32 +10,32 @@ Linux(X11):Execute`ktm2/ktm.sh`
 Edit `ktm2/ktm/config.json`
 ```json
 {
-    "mouse_init_move_distance" :64,
-    "mouse_init_wheel_distance":4,
-    "leader"                   :"alt_l",
-    "mouse_move_up"            :"k",
-    "mouse_move_down"          :"j",
-    "mouse_move_left"          :"h",
-    "mouse_move_right"         :"l",
-    "mouse_left_click"         :"o",
-    "mouse_left_double_click"  :"O",
-    "mouse_left_down"          :"(",
-    "mouse_left_up"            :")",
-    "mouse_right_click"        :"x",
-    "mouse_right_double_click" :"X",
-    "mouse_right_down"         :"<",
-    "mouse_right_up"           :">",
-    "mouse_middle_click"       :",",
-    "mouse_middle_double_click":".",
-    "mouse_middle_down"        :"[",
-    "mouse_middle_up"          :"]",
-    "mouse_wheel_down"         :"f",
-    "mouse_wheel_up"           :"b",
-    "mouse_distance_double"    :"*",
-    "mouse_distance_halve"     :"/",
-    "app_pause"                :"!",
-    "app_restart"              :"@",
-    "app_close"                :"^"
+    "mouse_init_move_distance" :0,
+    "mouse_init_wheel_distance":0,
+    "leader"                   :"",
+    "mouse_move_up"            :"",
+    "mouse_move_down"          :"",
+    "mouse_move_left"          :"",
+    "mouse_move_right"         :"",
+    "mouse_left_click"         :"",
+    "mouse_left_double_click"  :"",
+    "mouse_left_down"          :"",
+    "mouse_left_up"            :"",
+    "mouse_right_click"        :"",
+    "mouse_right_double_click" :"",
+    "mouse_right_down"         :"",
+    "mouse_right_up"           :"",
+    "mouse_middle_click"       :"",
+    "mouse_middle_double_click":"",
+    "mouse_middle_down"        :"",
+    "mouse_middle_up"          :"",
+    "mouse_wheel_down"         :"",
+    "mouse_wheel_up"           :"",
+    "mouse_distance_double"    :"",
+    "mouse_distance_halve"     :"",
+    "app_pause"                :"",
+    "app_restart"              :"",
+    "app_close"                :""
 }
 ```
 ## Help
@@ -73,4 +73,4 @@ others in
 ```
 > Tips:  
 > Don't set duplicate shortcut keys.  
-> Don't set the shortcut key to `""`(empty string).  
+> Don't set the shortcut key to `0` or `""`(empty string).  
