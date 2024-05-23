@@ -25,8 +25,8 @@ def init():
         config.Shortcut.mouse_middle_double_click:mouse.Mouse.middle_double_click,
         config.Shortcut.mouse_middle_down        :mouse.Mouse.middle_down        ,
         config.Shortcut.mouse_middle_up          :mouse.Mouse.middle_up          ,
-        config.Shortcut.mouse_wheel_down         :mouse.Mouse.wheel_down        ,
-        config.Shortcut.mouse_wheel_up           :mouse.Mouse.wheel_up          ,
+        config.Shortcut.mouse_scroll_down        :mouse.Mouse.scroll_down        ,
+        config.Shortcut.mouse_scroll_up          :mouse.Mouse.scroll_up          ,
         config.Shortcut.mouse_distance_double    :mouse.Mouse.distance_double   ,
         config.Shortcut.mouse_distance_halve     :mouse.Mouse.distance_halve    ,
     }

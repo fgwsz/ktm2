@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 class Constant:
-    mouse_init_move_distance =0#int >0
-    mouse_init_wheel_distance=0#int >0
+    mouse_init_move_distance  =0#int >0
+    mouse_init_scroll_distance=0#int >0
 
 class Shortcut:
     leader                   =''#pynput.keyboard.Key
@@ -21,8 +21,8 @@ class Shortcut:
     mouse_middle_double_click=''#pynput.keyboard.Key.char
     mouse_middle_down        =''#pynput.keyboard.Key.char
     mouse_middle_up          =''#pynput.keyboard.Key.char
-    mouse_wheel_down         =''#pynput.keyboard.Key.char
-    mouse_wheel_up           =''#pynput.keyboard.Key.char
+    mouse_scroll_down        =''#pynput.keyboard.Key.char
+    mouse_scroll_up          =''#pynput.keyboard.Key.char
     mouse_distance_double    =''#pynput.keyboard.Key.char
     mouse_distance_halve     =''#pynput.keyboard.Key.char
     app_pause                =''#pynput.keyboard.Key.char

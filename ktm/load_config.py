@@ -101,12 +101,12 @@ def load_config(config_file_path):
         print('[config failed]:mouse_init_move_distance')
         return False
 
-    if 'mouse_init_wheel_distance' in data \
-        and(isinstance(data['mouse_init_wheel_distance'],int)) \
-        and(data['mouse_init_wheel_distance']>0):
-        config.Constant.mouse_init_wheel_distance=data['mouse_init_wheel_distance']
+    if 'mouse_init_scroll_distance' in data \
+        and(isinstance(data['mouse_init_scroll_distance'],int)) \
+        and(data['mouse_init_scroll_distance']>0):
+        config.Constant.mouse_init_scroll_distance=data['mouse_init_scroll_distance']
     else:
-        print('[config failed]:mouse_init_wheel_distance')
+        print('[config failed]:mouse_init_scroll_distance')
         return False
 
     if 'leader' in data \
@@ -278,24 +278,24 @@ def load_config(config_file_path):
         print('[config failed]:mouse_middle_up')
         return False
 
-    if 'mouse_wheel_down' in data \
-        and(isinstance(data['mouse_wheel_down'],str)) \
-        and(data['mouse_wheel_down'] in g_normal_key_string_set) \
-        and(data['mouse_wheel_down'] not in shortcut_normal_key_set):
-        config.Shortcut.mouse_wheel_down=data['mouse_wheel_down']
-        shortcut_normal_key_set.add(config.Shortcut.mouse_wheel_down)
+    if 'mouse_scroll_down' in data \
+        and(isinstance(data['mouse_scroll_down'],str)) \
+        and(data['mouse_scroll_down'] in g_normal_key_string_set) \
+        and(data['mouse_scroll_down'] not in shortcut_normal_key_set):
+        config.Shortcut.mouse_scroll_down=data['mouse_scroll_down']
+        shortcut_normal_key_set.add(config.Shortcut.mouse_scroll_down)
     else:
-        print('[config failed]:mouse_wheel_down')
+        print('[config failed]:mouse_scroll_down')
         return False
 
-    if 'mouse_wheel_up' in data \
-        and(isinstance(data['mouse_wheel_up'],str)) \
-        and(data['mouse_wheel_up'] in g_normal_key_string_set) \
-        and(data['mouse_wheel_up'] not in shortcut_normal_key_set):
-        config.Shortcut.mouse_wheel_up=data['mouse_wheel_up']
-        shortcut_normal_key_set.add(config.Shortcut.mouse_wheel_up)
+    if 'mouse_scroll_up' in data \
+        and(isinstance(data['mouse_scroll_up'],str)) \
+        and(data['mouse_scroll_up'] in g_normal_key_string_set) \
+        and(data['mouse_scroll_up'] not in shortcut_normal_key_set):
+        config.Shortcut.mouse_scroll_up=data['mouse_scroll_up']
+        shortcut_normal_key_set.add(config.Shortcut.mouse_scroll_up)
     else:
-        print('[config failed]:mouse_wheel_up')
+        print('[config failed]:mouse_scroll_up')
         return False
 
     if 'mouse_distance_double' in data \

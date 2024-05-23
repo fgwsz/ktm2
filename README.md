@@ -12,7 +12,7 @@ Edit `ktm2/ktm/config.json`
 ```json
 {
     "mouse_init_move_distance" :0,
-    "mouse_init_wheel_distance":0,
+    "mouse_init_scroll_distance":0,
     "leader"                   :"",
     "mouse_move_up"            :"",
     "mouse_move_down"          :"",
@@ -30,8 +30,8 @@ Edit `ktm2/ktm/config.json`
     "mouse_middle_double_click":"",
     "mouse_middle_down"        :"",
     "mouse_middle_up"          :"",
-    "mouse_wheel_down"         :"",
-    "mouse_wheel_up"           :"",
+    "mouse_scroll_down"        :"",
+    "mouse_scroll_up"          :"",
     "mouse_distance_double"    :"",
     "mouse_distance_halve"     :"",
     "app_pause"                :"",
@@ -41,7 +41,7 @@ Edit `ktm2/ktm/config.json`
 ```
 ## Help
 `mouse_init_move_distance` is `integer(>0)`  
-`mouse_init_wheel_distance` is `integer(>0)`  
+`mouse_init_scroll_distance` is `integer(>0)`  
 `leader` in
 ```json
 [

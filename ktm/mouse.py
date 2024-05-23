@@ -5,12 +5,12 @@ from ktm import config
 
 class Mouse:
     move_distance_=0
-    wheel_distance_=0
+    scroll_distance_=0
 
     @staticmethod
     def init():
         Mouse.move_distance_=config.Constant.mouse_init_move_distance
-        Mouse.wheel_distance_=config.Constant.mouse_init_wheel_distance
+        Mouse.scroll_distance_=config.Constant.mouse_init_scroll_distance
 
     @staticmethod
     def _move(dx,dy):
@@ -92,24 +92,24 @@ class Mouse:
         mouse.release(pynput.mouse.Button.middle)
 
     @staticmethod
-    def wheel_up():
+    def scroll_up():
         mouse=pynput.mouse.Controller()
-        mouse.scroll(0,Mouse.wheel_distance_)
+        mouse.scroll(0,Mouse.scroll_distance_)
 
     @staticmethod
-    def wheel_down():
+    def scroll_down():
         mouse=pynput.mouse.Controller()
-        mouse.scroll(0,-Mouse.wheel_distance_)
+        mouse.scroll(0,-Mouse.scroll_distance_)
 
     @staticmethod
     def distance_double():
         Mouse.move_distance_=Mouse.move_distance_*2
-        Mouse.wheel_distance_=Mouse.wheel_distance_*2
+        Mouse.scroll_distance_=Mouse.scroll_distance_*2
 
     @staticmethod
     def distance_halve():
         if Mouse.move_distance_>1:
             Mouse.move_distance_=int(Mouse.move_distance_/2)
 
-        if Mouse.wheel_distance_>1:
-            Mouse.wheel_distance_=int(Mouse.wheel_distance_/2)
+        if Mouse.scroll_distance_>1:
+            Mouse.scroll_distance_=int(Mouse.scroll_distance_/2)
