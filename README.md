@@ -1,11 +1,12 @@
 # KTM2 ( Windows | Linux( [√]X11 [×]Wayland ) )
-`KTM2(Keyboard To Mouse)`'s purpose is to replace mouse operation with keyboard operation on Windows/Linux(X11) operating systems.
+`KTM2(Keyboard To Mouse)`'s purpose is to replace mouse operation with 
+keyboard operation on `Windows` and `Linux(X11)` operating systems.
 ## Install
-Windows:Execute`ktm2/install.ps1`  
-Linux(X11):Execute`ktm2/install.sh`  
+`Windows`:Execute`ktm2/install.ps1`  
+`Linux(X11)`:Execute`ktm2/install.sh`  
 ## Execute
-Windows:Execute`ktm2/ktm.ps1`  
-Linux(X11):Execute`ktm2/ktm.sh`  
+`Windows`:Execute`ktm2/ktm.ps1`  
+`Linux(X11)`:Execute`ktm2/ktm.sh`  
 ## Configure
 Edit `ktm2/ktm/config.json`
 ```json
