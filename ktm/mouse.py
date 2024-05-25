@@ -46,12 +46,12 @@ class Mouse:
     @staticmethod
     def left_down():
         mouse=pynput.mouse.Controller()
+        mouse.press(pynput.mouse.Button.left)
 
     @staticmethod
     def left_up():
         mouse=pynput.mouse.Controller()
         mouse.release(pynput.mouse.Button.left)
-        mouse.press(pynput.mouse.Button.left)
 
     @staticmethod
     def right_click():
