@@ -44,12 +44,12 @@ class Mouse:
         mouse.click(pynput.mouse.Button.left,2)
 
     @staticmethod
-    def left_down():
+    def left_press():
         mouse=pynput.mouse.Controller()
         mouse.press(pynput.mouse.Button.left)
 
     @staticmethod
-    def left_up():
+    def left_release():
         mouse=pynput.mouse.Controller()
         mouse.release(pynput.mouse.Button.left)
 
@@ -64,12 +64,12 @@ class Mouse:
         mouse.click(pynput.mouse.Button.right,2)
 
     @staticmethod
-    def right_down():
+    def right_press():
         mouse=pynput.mouse.Controller()
         mouse.press(pynput.mouse.Button.right)
 
     @staticmethod
-    def right_up():
+    def right_release():
         mouse=pynput.mouse.Controller()
         mouse.release(pynput.mouse.Button.right)
 
@@ -82,12 +82,12 @@ class Mouse:
         pyautogui.doubleClick(button='middle')
 
     @staticmethod
-    def middle_down():
+    def middle_press():
         mouse=pynput.mouse.Controller()
         mouse.press(pynput.mouse.Button.middle)
 
     @staticmethod
-    def middle_up():
+    def middle_release():
         mouse=pynput.mouse.Controller()
         mouse.release(pynput.mouse.Button.middle)
 

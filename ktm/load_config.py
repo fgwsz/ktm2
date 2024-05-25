@@ -178,24 +178,24 @@ def load_config(config_file_path):
         print('[config failed]:mouse_left_double_click')
         return False
 
-    if 'mouse_left_down' in data \
-        and(isinstance(data['mouse_left_down'],str)) \
-        and(data['mouse_left_down'] in g_normal_key_string_set) \
-        and(data['mouse_left_down'] not in shortcut_normal_key_set):
-        config.Shortcut.mouse_left_down=data['mouse_left_down']
-        shortcut_normal_key_set.add(config.Shortcut.mouse_left_down)
+    if 'mouse_left_press' in data \
+        and(isinstance(data['mouse_left_press'],str)) \
+        and(data['mouse_left_press'] in g_normal_key_string_set) \
+        and(data['mouse_left_press'] not in shortcut_normal_key_set):
+        config.Shortcut.mouse_left_press=data['mouse_left_press']
+        shortcut_normal_key_set.add(config.Shortcut.mouse_left_press)
     else:
-        print('[config failed]:mouse_left_down')
+        print('[config failed]:mouse_left_press')
         return False
 
-    if 'mouse_left_up' in data \
-        and(isinstance(data['mouse_left_up'],str)) \
-        and(data['mouse_left_up'] in g_normal_key_string_set) \
-        and(data['mouse_left_up'] not in shortcut_normal_key_set):
-        config.Shortcut.mouse_left_up=data['mouse_left_up']
-        shortcut_normal_key_set.add(config.Shortcut.mouse_left_up)
+    if 'mouse_left_release' in data \
+        and(isinstance(data['mouse_left_release'],str)) \
+        and(data['mouse_left_release'] in g_normal_key_string_set) \
+        and(data['mouse_left_release'] not in shortcut_normal_key_set):
+        config.Shortcut.mouse_left_release=data['mouse_left_release']
+        shortcut_normal_key_set.add(config.Shortcut.mouse_left_release)
     else:
-        print('[config failed]:mouse_left_up')
+        print('[config failed]:mouse_left_release')
         return False
 
     if 'mouse_right_click' in data \
@@ -218,24 +218,24 @@ def load_config(config_file_path):
         print('[config failed]:mouse_right_double_click')
         return False
 
-    if 'mouse_right_down' in data \
-        and(isinstance(data['mouse_right_down'],str)) \
-        and(data['mouse_right_down'] in g_normal_key_string_set) \
-        and(data['mouse_right_down'] not in shortcut_normal_key_set):
-        config.Shortcut.mouse_right_down=data['mouse_right_down']
-        shortcut_normal_key_set.add(config.Shortcut.mouse_right_down)
+    if 'mouse_right_press' in data \
+        and(isinstance(data['mouse_right_press'],str)) \
+        and(data['mouse_right_press'] in g_normal_key_string_set) \
+        and(data['mouse_right_press'] not in shortcut_normal_key_set):
+        config.Shortcut.mouse_right_press=data['mouse_right_press']
+        shortcut_normal_key_set.add(config.Shortcut.mouse_right_press)
     else:
-        print('[config failed]:mouse_right_down')
+        print('[config failed]:mouse_right_press')
         return False
 
-    if 'mouse_right_up' in data \
-        and(isinstance(data['mouse_right_up'],str)) \
-        and(data['mouse_right_up'] in g_normal_key_string_set) \
-        and(data['mouse_right_up'] not in shortcut_normal_key_set):
-        config.Shortcut.mouse_right_up=data['mouse_right_up']
-        shortcut_normal_key_set.add(config.Shortcut.mouse_right_up)
+    if 'mouse_right_release' in data \
+        and(isinstance(data['mouse_right_release'],str)) \
+        and(data['mouse_right_release'] in g_normal_key_string_set) \
+        and(data['mouse_right_release'] not in shortcut_normal_key_set):
+        config.Shortcut.mouse_right_release=data['mouse_right_release']
+        shortcut_normal_key_set.add(config.Shortcut.mouse_right_release)
     else:
-        print('[config failed]:mouse_right_up')
+        print('[config failed]:mouse_right_release')
         return False
 
     if 'mouse_middle_click' in data \
@@ -258,24 +258,24 @@ def load_config(config_file_path):
         print('[config failed]:mouse_middle_double_click')
         return False
 
-    if 'mouse_middle_down' in data \
-        and(isinstance(data['mouse_middle_down'],str)) \
-        and(data['mouse_middle_down'] in g_normal_key_string_set) \
-        and(data['mouse_middle_down'] not in shortcut_normal_key_set):
-        config.Shortcut.mouse_middle_down=data['mouse_middle_down']
-        shortcut_normal_key_set.add(config.Shortcut.mouse_middle_down)
+    if 'mouse_middle_press' in data \
+        and(isinstance(data['mouse_middle_press'],str)) \
+        and(data['mouse_middle_press'] in g_normal_key_string_set) \
+        and(data['mouse_middle_press'] not in shortcut_normal_key_set):
+        config.Shortcut.mouse_middle_press=data['mouse_middle_press']
+        shortcut_normal_key_set.add(config.Shortcut.mouse_middle_press)
     else:
-        print('[config failed]:mouse_middle_down')
+        print('[config failed]:mouse_middle_press')
         return False
 
-    if 'mouse_middle_up' in data \
-        and(isinstance(data['mouse_middle_up'],str)) \
-        and(data['mouse_middle_up'] in g_normal_key_string_set) \
-        and(data['mouse_middle_up'] not in shortcut_normal_key_set):
-        config.Shortcut.mouse_middle_up=data['mouse_middle_up']
-        shortcut_normal_key_set.add(config.Shortcut.mouse_middle_up)
+    if 'mouse_middle_release' in data \
+        and(isinstance(data['mouse_middle_release'],str)) \
+        and(data['mouse_middle_release'] in g_normal_key_string_set) \
+        and(data['mouse_middle_release'] not in shortcut_normal_key_set):
+        config.Shortcut.mouse_middle_release=data['mouse_middle_release']
+        shortcut_normal_key_set.add(config.Shortcut.mouse_middle_release)
     else:
-        print('[config failed]:mouse_middle_up')
+        print('[config failed]:mouse_middle_release')
         return False
 
     if 'mouse_scroll_down' in data \
