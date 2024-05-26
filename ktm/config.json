@@ -18,7 +18,7 @@
     "mouse_middle_double_click" :"M",
     "mouse_middle_press"        :",",
     "mouse_middle_release"      :".",
-    "mouse_scroll_down"         :"f",
+    "mouse_scroll_down"         :"n",
     "mouse_scroll_up"           :"b",
     "mouse_distance_double"     :"*",
     "mouse_distance_halve"      :"/",
