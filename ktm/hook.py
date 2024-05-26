@@ -46,16 +46,15 @@ def on_press(key):
     if not is_normal_key(key):
         if key==config.Shortcut.leader:
             g_leader_is_press=True
-    elif not g_app_is_pause \
-        and g_leader_is_press \
-        and key.char in g_callback_table:
-        g_callback_table[key.char]()
-    elif key.char==config.Shortcut.app_pause:
-        g_app_is_pause=True
-    elif key.char==config.Shortcut.app_restart:
-        g_app_is_pause=False
-    elif key.char==config.Shortcut.app_close:
-        return False
+    elif g_leader_is_press:
+        if key.char==config.Shortcut.app_pause:
+            g_app_is_pause=True
+        elif key.char==config.Shortcut.app_restart:
+            g_app_is_pause=False
+        elif key.char==config.Shortcut.app_close:
+            return False
+        elif (not g_app_is_pause) and key.char in g_callback_table:
+            g_callback_table[key.char]()
 
 def on_release(key):
     global g_leader_is_press
